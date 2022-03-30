@@ -1,0 +1,13 @@
+def s():
+  print('введите слогаемые через пробел')
+  aa = input()
+  if aa.isdigit():
+    a,b = [int(i) for i in aa.split()]
+    return a+b
+  else:
+    print('неверно ввел чтото, попробуешь еще раз y|n?')
+    bb = input()
+    if bb == 'y' or  bb== 'Y':
+      s()
+    else:
+      print('ну как хочешь')
